@@ -1,0 +1,423 @@
+.transaction-page {
+    width: 90%;
+    max-width: none;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #f5f7fb;
+}
+
+.transaction-title {
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-size: 70px;
+    color: #222;
+}
+
+.transaction-message {
+    text-align: center;
+    margin: 15px 0;
+    color: #333;
+    font-size: 20px;
+}
+
+.add-transaction-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.add-transaction-btn:hover {
+    background-color: #125bb0;
+}
+
+.transaction-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+}
+
+.transaction-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 19px;
+    outline: none;
+}
+
+.transaction-input:focus {
+    border-color: #1976d2;
+}
+
+.transaction-form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.save-transaction-btn {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #198754;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.save-transaction-btn:hover {
+    background-color: #146c43;
+}
+
+.cancel-transaction-btn {
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6c757d;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancel-transaction-btn:hover {
+    background-color: #565e64;
+}
+
+.transaction-list-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #222;
+    font-size: 32px;
+}
+
+.transaction-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.transaction-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.10);
+    border-left: 5px solid #1976d2;
+}
+
+.transaction-info p {
+    margin: 12px 0;
+    color: #444;
+    font-size: 20px;
+}
+
+.transaction-info strong {
+    color: #222;
+}
+
+.credit-indicator {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background-color: #e8f7ee;
+    color: #198754;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.debit-indicator {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 20px;
+    background-color: #fdeaea;
+    color: #dc3545;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.credit-amount {
+    color: #198754;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.debit-amount {
+    color: #dc3545;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.balance-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1976d2;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.balance-btn:hover {
+    background-color: #125bb0;
+}
+
+.update-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f0ad00;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-color: #d99600;
+}
+
+.delete-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #dc3545;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #bb2d3b;
+}
+
+.reminder-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #198754;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.reminder-btn:hover {
+    background-color: #146c43;
+}
+
+.customer-transactions {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e1e5ea;
+}
+
+.customer-transactions h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 26px;
+}
+
+.single-transaction {
+    padding: 16px 0;
+}
+
+.single-transaction p {
+    margin: 11px 0;
+    color: #444;
+    font-size: 19px;
+}
+
+.single-transaction strong {
+    color: #222;
+}
+
+.single-transaction:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.customer-balance-summary {
+    margin-top: 20px;
+    padding: 22px;
+    background-color: #eaf2ff;
+    border-radius: 8px;
+    border-left: 5px solid #1976d2;
+}
+
+.customer-balance-summary h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #1976d2;
+    font-size: 26px;
+}
+
+.customer-balance-summary p {
+    margin: 11px 0;
+    color: #444;
+    font-size: 19px;
+}
+
+.customer-action-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.customer-action-section button {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.transaction-balance-card {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    border-top: 5px solid #1976d2;
+}
+
+.transaction-balance-card h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #222;
+    font-size: 30px;
+}
+
+.transaction-balance-card p {
+    margin: 12px 0;
+    color: #444;
+    font-size: 19px;
+}
+
+.balance-credit {
+    color: #198754 !important;
+    font-weight: 600;
+    font-size: 20px !important;
+}
+
+.balance-debit {
+    color: #dc3545 !important;
+    font-weight: 600;
+    font-size: 20px !important;
+}
+
+.transaction-balance-card h3 {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    background-color: #eaf2ff;
+    color: #1976d2;
+    border-radius: 7px;
+    font-size: 27px;
+}
+
+.no-transactions {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .transaction-page {
+        padding: 25px 15px;
+    }
+
+    .transaction-title {
+        font-size: 38px;
+    }
+
+    .transaction-message {
+        font-size: 18px;
+    }
+
+    .transaction-form {
+        padding: 20px;
+    }
+
+    .transaction-input {
+        font-size: 18px;
+    }
+
+    .transaction-form-buttons {
+        flex-direction: column;
+    }
+
+    .transaction-form-buttons button {
+        width: 100%;
+    }
+
+    .transaction-card {
+        padding: 20px;
+    }
+
+    .transaction-info p {
+        font-size: 18px;
+    }
+
+    .customer-action-section {
+        flex-direction: column;
+    }
+
+    .customer-action-section button {
+        width: 100%;
+        font-size: 18px;
+        padding: 13px;
+    }
+
+    .customer-transactions {
+        padding: 15px;
+    }
+
+    .customer-transactions h3 {
+        font-size: 23px;
+    }
+
+    .single-transaction {
+        padding: 14px 0;
+    }
+
+    .single-transaction p {
+        font-size: 18px;
+    }
+
+    .customer-balance-summary {
+        padding: 18px;
+    }
+
+    .customer-balance-summary h3 {
+        font-size: 23px;
+    }
+
+    .customer-balance-summary p {
+        font-size: 18px;
+    }
+}

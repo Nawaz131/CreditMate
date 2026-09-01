@@ -1,0 +1,256 @@
+.customer-page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.customer-title {
+    text-align: center !important;
+    font-size: 32px;
+    margin: 0 0 25px;
+    color: white !important;
+}
+
+
+.customer-message {
+    text-align: center;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 6px;
+    background-color: #d4edda;
+    color: #155724 !important;
+}
+
+
+.add-customer-btn {
+    display: block;
+    margin: 0 auto 25px;
+    padding: 11px 22px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.add-customer-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+.customer-form {
+    width: 450px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.customer-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+    color: #222;
+    background-color: rgb(196, 179, 179);
+}
+
+.customer-input::placeholder {
+    color: #666;
+    opacity: 1;
+}
+        
+.customer-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    background-color: white;
+}
+
+
+.save-customer-btn {
+    width: 100%;
+    padding: 11px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #16a34a;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.save-customer-btn:hover {
+    background-color: #15803d;
+}
+
+
+.customer-list-title {
+    margin: 30px 0 20px;
+    text-align: left;
+    color: white !important;
+}
+
+
+.customer-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 20px;
+    margin-bottom: 18px;
+
+    border-radius: 10px;
+
+    background-color: white;
+    color: #333;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Customer information */
+
+.customer-card p {
+    margin: 8px 0;
+    color: #333 !important;
+    font-size: 16px;
+}
+
+
+.customer-card button {
+    margin-top: 10px;
+}
+
+
+.balance-btn {
+    padding: 9px 14px;
+    margin-right: 8px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #2563eb;
+    color: white;
+
+    cursor: pointer;
+}
+
+.balance-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+.update-btn {
+    padding: 9px 14px;
+    margin-right: 8px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #f59e0b;
+    color: white;
+
+    cursor: pointer;
+}
+
+.update-btn:hover {
+    background-color: #d97706;
+}
+
+
+.delete-btn {
+    padding: 9px 14px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #dc2626;
+    color: white;
+
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #b91c1c;
+}
+
+
+.balance-card {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 30px;
+    padding: 25px;
+
+    border-radius: 10px;
+
+    background-color: #f0fdf4;
+    color: #333;
+
+    border-left: 5px solid #16a34a;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.balance-card h2 {
+    margin-top: 0;
+    color: #166534 !important;
+}
+
+.balance-card p {
+    color: #333 !important;
+}
+
+.balance-card h3 {
+    color: #15803d !important;
+    font-size: 22px;
+}
+
+
+.customer-page hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 25px 0;
+}
+
+
+@media (max-width: 600px) {
+
+    .customer-page {
+        width: 95%;
+        padding: 20px 10px;
+    }
+
+    .customer-title {
+        font-size: 26px;
+    }
+
+    .customer-form {
+        width: 100%;
+    }
+
+    .customer-card {
+        padding: 15px;
+    }
+
+    .balance-btn,
+    .update-btn,
+    .delete-btn {
+        margin-top: 8px;
+    }
+}
