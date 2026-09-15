@@ -24,6 +24,10 @@ app.use(
 //Route
 app.use("/api", mainRouter);
 
+app.get("/", (req, res) => {
+  res.send("CreditMate Backend is Running!");
+});
+
 //MongoDB connection
 mongoose
     .connect(process.env.MONGODB_URL)
