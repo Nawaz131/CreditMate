@@ -16,10 +16,12 @@ app.use(express.json());
 app.use(
     cors({
         origin: "https://creditmate-frontend.onrender.com",
-        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization"],
         credentials: true,
     })
 );
+
 
 //Route
 app.use("/api", mainRouter);
