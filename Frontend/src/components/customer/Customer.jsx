@@ -17,7 +17,7 @@ const Customer = () => {
   const getCustomers = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:3000/api/customer/all",
+        "https://credit-mate.onrender.com/api/customer/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -60,7 +60,7 @@ const Customer = () => {
     try {
       if (editId) {
         await axios.put(
-          `http://localhost:3000/api/customer/update/${editId}`,
+          `https://credit-mate.onrender.com/api/customer/update/${editId}`,
           {
             name,
             phone,
@@ -75,7 +75,7 @@ const Customer = () => {
         setMessage("Customer updated successfully");
       } else {
         await axios.post(
-          "http://localhost:3000/api/customer/create",
+          "https://credit-mate.onrender.com/api/customer/create",
           {
             name,
             phone,
@@ -114,7 +114,7 @@ const Customer = () => {
     setMessage("");
 
     try {
-      await axios.delete(`http://localhost:3000/api/customer/delete/${id}`, {
+      await axios.delete(`https://credit-mate.onrender.com/api/customer/delete/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -139,7 +139,7 @@ const Customer = () => {
   const getCustomerBalance = async (customerId) => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/transaction/balance/${customerId}`,
+        `https://credit-mate.onrender.com/api/transaction/balance/${customerId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

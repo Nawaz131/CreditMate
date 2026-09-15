@@ -20,7 +20,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/user/signup",
+        "https://credit-mate.onrender.com/api/user/signup",
         {
           name,
           shopName,

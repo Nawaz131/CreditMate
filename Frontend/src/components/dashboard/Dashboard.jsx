@@ -14,7 +14,7 @@ const Dashboard = () => {
     const getCustomers = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:3000/api/customer/all",
+                "https://credit-mate.onrender.com/api/customer/all",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -34,7 +34,7 @@ const Dashboard = () => {
     const getTransactions = async () => {
         try {
             const response = await axios.get(
-                "http://localhost:3000/api/transaction/all",
+                "https://credit-mate.onrender.com/api/transaction/all",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
