@@ -24,7 +24,7 @@ const Transaction = () => {
   const getCustomers = async () => {
     try {
       const response = await axios.get(
-        "https://credit-mate.onrender.com/api/customer/all",
+        "https://creditmate-backend.onrender.com/api/customer/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -42,7 +42,7 @@ const Transaction = () => {
   const getTransactions = async () => {
     try {
       const response = await axios.get(
-        "https://credit-mate.onrender.com/api/transaction/all",
+        "https://creditmate-backend.onrender.com/api/transaction/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -92,7 +92,7 @@ const Transaction = () => {
     try {
       if (editId) {
         const response = await axios.put(
-          `https://credit-mate.onrender.com/api/transaction/update/${editId}`,
+          `https://creditmate-backend.onrender.com/api/transaction/update/${editId}`,
           {
             type,
             amount,
@@ -110,7 +110,7 @@ const Transaction = () => {
         setEditId(null);
       } else {
         const response = await axios.post(
-          "https://credit-mate.onrender.com/api/transaction/create",
+          "https://creditmate-backend.onrender.com/api/transaction/create",
           {
             customerId,
             amount,
@@ -152,7 +152,7 @@ const Transaction = () => {
     }
 
     try {
-      await axios.delete(`https://credit-mate.onrender.com/api/transaction/delete/${id}`, {
+      await axios.delete(`https://creditmate-backend.onrender.com/api/transaction/delete/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -187,7 +187,7 @@ const Transaction = () => {
   const getCustomerBalance = async (customerId) => {
     try {
       const response = await axios.get(
-        `https://credit-mate.onrender.com/api/transaction/customer/${customerId}/balance`,
+        `https://creditmate-backend.onrender.com/api/transaction/customer/${customerId}/balance`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -211,7 +211,7 @@ const Transaction = () => {
   const handleSendReminder = async (customerId) => {
     try {
       const response = await axios.post(
-        `https://credit-mate.onrender.com/api/transaction/customer/${customerId}/send-reminder`,
+        `https://creditmate-backend.onrender.com/api/transaction/customer/${customerId}/send-reminder`,
         {},
         {
           headers: {

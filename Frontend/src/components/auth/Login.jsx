@@ -24,7 +24,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://credit-mate.onrender.com/api/user/login",
+        "https://creditmate-backend.onrender.com/api/user/login",
         {
           email,
           password,
