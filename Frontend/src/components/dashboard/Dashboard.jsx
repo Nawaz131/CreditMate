@@ -14,7 +14,7 @@ const Dashboard = () => {
     const getCustomers = async () => {
         try {
             const response = await axios.get(
-                "https://credit-mate.onrender.com/api/customer/all",
+                "https://creditmate-backend.onrender.com/api/customer/all",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
